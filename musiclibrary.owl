@@ -1,0 +1,2362 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/"
+     xmlns:singer="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#singer&apos;"
+     xmlns:performer="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#performer&apos;">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/image -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#belongsto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#belongsto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#comingfrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#comingfrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#COO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#createdby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#createdby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#haspartof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#haspartof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#featuring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#publishedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#publishedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#publishedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#publishedin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordedin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordingplace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#performer&apos;s_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#performer&apos;s_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#singer&apos;s_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#singer&apos;s_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#COO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#COO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Place"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordingplace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#COO"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#COO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#featuring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#featuring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordingplace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordingplace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Albino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Albino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Arezzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Arezzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Bologna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Bologna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Catania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Catania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DIY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DIY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DOGSONACID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DOGSONACID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dogsonacid.bandcamp.com/album/dogs-on-acid</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Milano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Milano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Norway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Norway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Pesaro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Pesaro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Rimini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Rimini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#SoglianoalRubicone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#SoglianoalRubicone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#TWENTYMILESTOMOTHER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#TWENTYMILESTOMOTHER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Pesaro"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.rockit.it/twentymilestomother/biografia</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#UK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#UK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Universal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Universal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Universal"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+        <schema:image rdf:resource="https://upload.wikimedia.org/wikipedia/ru/b/bd/Universal_Music_Group.png"/>
+        <rdfs:comment rdf:resource="https://www.universalmusic.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#V4V -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#V4V">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#V4V"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://f4.bcbits.com/img/0004694712_10.jpg"/>
+        <rdfs:comment rdf:resource="https://www.v4v-records.it/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#XLrepubblica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#XLrepubblica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#actiondeadmouse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#actiondeadmouse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Bologna"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://actiondeadmouse.bandcamp.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#agesofrock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#agesofrock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alessandrofiori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alessandrofiori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Arezzo"/>
+        <haspartof rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stres"/>
+        <rdfs:comment>http://www.urtovox.com/bands/alessandrofiori_bio.htm</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#allaboutjazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#allaboutjazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#altro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#altro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Pesaro"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://altro.bandcamp.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#analphabetapolothology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#analphabetapolothology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mathrock"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cap&apos;njazz"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#jadetree"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1998"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punknews"/>
+        <schema:image>https://upload.wikimedia.org/wikipedia/en/9/93/Analphabetapolothology.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#analphabetapolothology"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punknews"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.punknews.org/review/1811/capn-jazz-analphabetapolothology</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#andsoyourlifeisruined -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#andsoyourlifeisruined">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Rimini"/>
+        <rdfs:comment rdf:resource="https://www.rockit.it/andsoyourlifeisruined"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aplacetoburystrangers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aplacetoburystrangers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://aplacetoburystrangers.bandcamp.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arcadefire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arcadefire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#canada"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.everythingnow.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arikoinuma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arikoinuma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aspettandoibarbari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aspettandoibarbari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#postrock"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#massimovolume"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#latempesta"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#XLrepubblica"/>
+        <schema:image>https://s.mxmcdn.net/images-storage/albums/6/8/6/4/5/6/26654686_350_350.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aspettandoibarbari"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#XLrepubblica"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xl.repubblica.it/brani-musicali/massimo-volume-ascolta-aspettando-i-barbari/5918/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#attentoamestesso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#attentoamestesso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#songwriting"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alessandrofiori"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#urtovox"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2010"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina"/>
+        <schema:image rdf:resource="https://rockitecn.nohup.it/thumb300x300/copertine/13099.jpg"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#attentoamestesso"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina"/>
+        <rdfs:comment>https://www.mescalina.it/musica/recensioni/alessandro-fiori-attento-a-me-stesso</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bandcamp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bandcamp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#beethoven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#beethoven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#composer"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Germany"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.lvbeethoven.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#behindthesun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#behindthesun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#psychedelic"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#motorpsycho"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rune"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2014"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#agesofrock"/>
+        <schema:image>https://agesofrock.files.wordpress.com/2014/03/front6.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#behindthesun"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#agesofrock"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://agesofrock.wordpress.com/2014/03/11/motorpsycho-behind-the-sun-2014/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#beyond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#beyond">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indie"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dinosaurjr"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pias"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2007"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#diffuser"/>
+        <schema:image rdf:resource="https://upload.wikimedia.org/wikipedia/en/thumb/3/34/DinosaurBeyond.JPG/220px-DinosaurBeyond.JPG"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#beyond"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#diffuser"/>
+        <rdfs:comment>http://diffuser.fm/dinosaur-jr-beyond/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blackpudding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blackpudding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan&amp;dukegarwood"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#heavenly"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#popmatters"/>
+        <schema:image>https://cdnrockol-rockolcomsrl.netdna-ssl.com/n1auPCm6AJFhTI1vPjDHLr9V1mY=/300x300/smart/rockol-img/img/foto/upload/BLACK_PUDDING.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blackpudding"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#popmatters"/>
+        <rdfs:comment>https://www.popmatters.com/170531-mark-lanegan-duke-garwood-black-pudding-2495763280.html</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blindeproteus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blindeproteus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blindeproteus"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://img.discogs.com/lfiOTWLE2Nbp7CKcKOeL8_A15Z8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/L-535183-1452688985-8961.jpeg.jpg</schema:image>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bluesfuneral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bluesfuneral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#4AD"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2012"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#consequenceofsound"/>
+        <schema:image>https://img.discogs.com/k-MBzSR7ADLVbE554dnL67Dptmw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3381268-1328345664.jpeg.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bluesfuneral"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#consequenceofsound"/>
+        <rdfs:comment>https://consequenceofsound.net/2012/02/album-review-mark-lanegan-band-blues-funeral/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#calibro35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#calibro35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Milano"/>
+        <rdfs:comment>http://www.calibro35.com/biografia/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#abroad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cesarebasile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cesarebasile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Catania"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.rockit.it/cesarebasile/biografia</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpolio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpolio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#SoglianoalRubicone"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.rockit.it/chesterpolio/biografia</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpoliowebnode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpoliowebnode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classicfm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classicfm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#closetmeraviglia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#closetmeraviglia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#songwriting"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cesarebasile"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#viceversa"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2001"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rockit"/>
+        <schema:image rdf:resource="https://i.ytimg.com/vi/PXqTKaMuiQc/hqdefault.jpg"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#closetmeraviglia"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rockit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.rockit.it/recensione/1574/cesarebasile-closet-meraviglia</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#columbia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#columbia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#columbia"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+        <schema:image rdf:resource="https://img.discogs.com/Dvr_IONnrD6wYwKiWbJ32Op0Y_0=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/L-1866-1484207887-2000.jpeg.jpg"/>
+        <rdfs:comment rdf:resource="http://www.columbiarecords.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#consequenceofsound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#consequenceofsound">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#deadocean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#deadocean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#deadocean"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://deadoceans.com/wp-content/themes/deadoceans/includes/images/logo_white.png</schema:image>
+        <rdfs:comment rdf:resource="https://deadoceans.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#debussy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#debussy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#composer"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#France"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.debussy.fr/encd/centre/centre.php</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#diffuser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#diffuser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dinosaurjr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dinosaurjr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment>http://www.dinosaurjr.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dogsonacid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dogsonacid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DOGSONACID"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#jadetree"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2015"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#popmatters"/>
+        <schema:image>https://f4.bcbits.com/img/a2190169961_10.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dogsonacid"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#popmatters"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.popmatters.com/dogs-on-acid-dogs-on-acid-2495477720.html</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#doncaballero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#doncaballero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.touchandgorecords.com/bands/band.php?id=10</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#donnabavosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#donnabavosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#drownedinsound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#drownedinsound">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dukegarwood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dukegarwood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#UK"/>
+        <haspartof rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan&amp;dukegarwood"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.dukegarwood.co.uk/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dulcinea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dulcinea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toadthewetsprocket"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#columbia"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1994"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arikoinuma"/>
+        <schema:image>https://cdn-s3.allmusic.com/release-covers/500/0000/143/0000143643.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dulcinea"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arikoinuma"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://arikoinuma.com/blog/2016/05/toad-the-wet-sprocket-dulcinea-review/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#emiclassics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#emiclassics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#emiclassics"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+        <schema:image rdf:resource="https://img.discogs.com/JYOCpku0UJtIqzKum_PEOFQ5XY4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/L-34406-1414500761-5183.jpeg.jpg"/>
+        <rdfs:comment rdf:resource="http://www.warnerclassics.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#endkadenzVol1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#endkadenzVol1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rock"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#verdena"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Universal"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2015"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indieforbunnies"/>
+        <schema:image>http://static.lafeltrinelli.it/static/images-3/xxl/957/6156957.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#endkadenzVol1"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indieforbunnies"/>
+        <rdfs:comment>http://www.indieforbunnies.com/2015/02/02/verdena-endkadenz-vol-1/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#epic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#epic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#epic"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+        <schema:image rdf:resource="http://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_1754427625.jpg"/>
+        <rdfs:comment rdf:resource="https://www.epicrecords.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#explodinghead -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#explodinghead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#shoegaze"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aplacetoburystrangers"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mute"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2009"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#drownedinsound"/>
+        <schema:image>https://img.discogs.com/Mm1DsBhrHEIXbph-wAX96TQ9-aw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2337777-1516865892-9780.jpeg.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#explodinghead"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#drownedinsound"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://drownedinsound.com/releases/14702/reviews/4138036</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#giantbomb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#giantbomb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#gramophone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#gramophone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#grunge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#grunge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#hardcorepunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#hardcorepunk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#heavenly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#heavenly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#heavenly"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://www.pias.com/files/2015/08/heavenly-320x180.png</schema:image>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://heavenlyrecordings.com/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibetonsky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibetonsky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indie"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#dinosaurjr"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pias"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2012"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stuff"/>
+        <schema:image>https://upload.wikimedia.org/wikipedia/en/c/c4/I_Bet_on_Sky.jpeg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibetonsky"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stuff"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.stuff.co.nz/entertainment/blogs/blog-on-the-tracks/7704323/Dinosaur-Jr-get-better-with-every-album</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibexhouse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibexhouse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibexhouse"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://f4.bcbits.com/img/0013937400_10.jpg</schema:image>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ibexhouse.bandcamp.com/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indieforbunnies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indieforbunnies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#instrumental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#instrumental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#inthecourtofthecrimsonking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#inthecourtofthecrimsonking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#progressive"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kingcrimson"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#island"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1969"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#allaboutjazz"/>
+        <schema:image>https://img1.annuncicdn.it/fb/60/fb609e315dc75a8a4b5faa93e29354cd_orig.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#inthecourtofthecrimsonking"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#allaboutjazz"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.allaboutjazz.com/in-the-court-of-the-crimson-king-original-master-edition-king-crimson-dgm-live-review-by-john-kelman.php?width=1600</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#island -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#island">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#island"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+        <schema:image rdf:resource="https://fontmeme.com/images/Island-Records-Logo.jpg"/>
+        <rdfs:comment rdf:resource="https://www.islandrecords.co.uk/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#jadetree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#jadetree">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#jadetree"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://static.punknews.org/images/topics/topicjadetree.png</schema:image>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://jadetree.com/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#joanofarc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#joanofarc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment>https://www.joanofarcband.com/bio/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#justkids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#justkids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kexp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kexp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kingcrimson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kingcrimson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#UK"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.dgmlive.com/king-crimson</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lamalora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lamalora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marnero"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DIY"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2016"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#donnabavosa"/>
+        <schema:image>https://f4.bcbits.com/img/a2069622381_10.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lamalora"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#donnabavosa"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.donnabavosa.com/marnero/lamalora_rece.htm</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lamer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lamer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classic"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#debussy"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1905"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classicfm"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lamer"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classicfm"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.classicfm.com/composers/debussy/guides/claude-debussys-la-mer-buyers-guide/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#latempesta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#latempesta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#latempesta"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://www.sherwood.it/public/images/thumbs/normal/Latempesta.jpg</schema:image>
+        <rdfs:comment rdf:resource="http://www.latempesta.org/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#live -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#live">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordingplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#liveinUmbertide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#liveinUmbertide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#joanofarc"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toloselatrack"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2010"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#live"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#umbria24noise"/>
+        <schema:image>http://www.toloselatrack.org/uploads/tape1.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#liveinUmbertide"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#umbria24noise"/>
+        <rdfs:comment>http://www.umbria24.it/noise24/musica-internazionale-a-umbertide-in-concerto-gli-americani-joan-of-arc</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#locus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#locus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mathrock"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpolio"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#blindeproteus"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpoliowebnode"/>
+        <schema:image>https://f4.bcbits.com/img/a4263960970_10.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#locus"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#chesterpoliowebnode"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://chesterpolio.webnode.it/recensioni/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <haspartof rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#screamingtrees"/>
+        <haspartof rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan&amp;dukegarwood"/>
+        <rdfs:comment>http://marklanegan.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marnero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marnero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Bologna"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.donnabavosa.com/marnero/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#massimovolume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#massimovolume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Bologna"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.salteditions.it/clementi_massimovolume/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mathrock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mathrock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#merge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#merge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#merge"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://upload.wikimedia.org/wikipedia/en/f/f5/Mergelogosmall.png</schema:image>
+        <rdfs:comment rdf:resource="https://www.mergerecords.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#motorpsycho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#motorpsycho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Norway"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://motorpsycho.no/bio/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mute"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://img.discogs.com/_ylM1SMFmShXL3rg3oi_yiYF4i8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/L-636-1267453011.jpeg.jpg</schema:image>
+        <rdfs:comment rdf:resource="http://mute.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#newrelax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#newrelax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stres"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ibexhouse"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2015"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#live"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bandcamp"/>
+        <schema:image>https://f4.bcbits.com/img/a2368265779_16.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#newrelax"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bandcamp"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ibexhouse.bandcamp.com/album/new-relax</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#oblivion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#oblivion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#grunge"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#screamingtrees"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#epic"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1992"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sputnikmusic"/>
+        <schema:image>https://upload.wikimedia.org/wikipedia/en/a/aa/Screaming_Trees_Sweet_Oblivion.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#oblivion"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sputnikmusic"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.sputnikmusic.com/review/11097/Screaming-Trees-Sweet-Oblivion/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ocanerarock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ocanerarock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#onewhiskey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#onewhiskey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pias">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pias"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>https://www.pias.com/files/2018/05/PIAS-recordings.jpg</schema:image>
+        <rdfs:comment rdf:resource="https://www.pias.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pitchfork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pitchfork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#popmatters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#popmatters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#postrock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#postrock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#progressive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#progressive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#psychedelic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#psychedelic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punknews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punknews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordkicks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordkicks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordkicks"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image>http://www.recordkicks.com/design/recordkicks/images/logo.png</schema:image>
+        <rdfs:comment rdf:resource="http://www.recordkicks.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reflektor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reflektor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indie"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arcadefire"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#merge"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kexp"/>
+        <schema:image>https://images-na.ssl-images-amazon.com/images/I/51SQ3BkujSL.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reflektor"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#kexp"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://blog.kexp.org/2013/10/28/album-review-arcade-fire-reflektor/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#relicscontrosuoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#relicscontrosuoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rivincite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rivincite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#andsoyourlifeisruined"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#V4V"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2016"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ocanerarock"/>
+        <schema:image rdf:resource="https://s.mxmcdn.net/images-storage/albums/1/1/8/9/2/1/31129811_350_350.jpg"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rivincite"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#ocanerarock"/>
+        <rdfs:comment rdf:resource="https://www.ocanerarock.com/music/recensioni/and-so-your-life-is-ruined-rivincite/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rockit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rockit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rune -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rune">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rune"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#major"/>
+        <schema:image rdf:resource="http://www.runegrammofon.com/sitefiles/10/design/runegrammofon.png"/>
+        <rdfs:comment rdf:resource="http://www.runegrammofon.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#scrapsatmidnight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#scrapsatmidnight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#subpop"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1998"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#onewhiskey"/>
+        <schema:image>https://img.discogs.com/OBlUJIvxmd_xJihpnQ2EWqzZbS4=/fit-in/600x517/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-409655-1325559344.jpeg.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#scrapsatmidnight"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#onewhiskey"/>
+        <rdfs:comment>http://onewhiskey.com/archive/articles/scrapsreviews.html</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#screamingtrees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#screamingtrees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <singer:s_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marklanegan</singer:s_name>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.scaruffi.com/vol4/scrtrees.html</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#shoegaze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#shoegaze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloungrandesasso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloungrandesasso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rock"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#verdena"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Universal"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2001"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina"/>
+        <schema:image>https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Solo_un_grande_sasso.jpg/220px-Solo_un_grande_sasso.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloungrandesasso"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina"/>
+        <rdfs:comment>https://www.mescalina.it/musica/recensioni/verdena-solo-un-grande-sasso</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#songwriting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#songwriting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sparso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sparso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#altro"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#latempesta"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#relicscontrosuoni"/>
+        <schema:image>https://images-eu.ssl-images-amazon.com/images/I/51%2BN33PGvuL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_PIAmznPrime%2CBottomLeft%2C0%2C-5_PIStarRatingFIVE%2CBottomLeft%2C360%2C-6_SR600%2C315_SCLZZZZZZZ_.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sparso"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#relicscontrosuoni"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.relics-controsuoni.com/2014/01/altro-sparso-2013-la-tempesta-di-simone-noizewave-vinci.html</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#spectrumculture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#spectrumculture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sputnikmusic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#sputnikmusic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Arezzo"/>
+        <singer:s_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alessandrofiori</singer:s_name>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ibexhouse.bandcamp.com/album/stres-ep</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordingplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stuff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#stuff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#subpop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#subpop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#subpop"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sub_Pop.svg/1200px-Sub_Pop.svg.png"/>
+        <rdfs:comment rdf:resource="https://www.subpop.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thequietus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thequietus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thesuburbs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thesuburbs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#indie"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#arcadefire"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#merge"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2010"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#giantbomb"/>
+        <schema:image>https://images-na.ssl-images-amazon.com/images/I/91NSd0WWdPL._SX466_.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thesuburbs"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#giantbomb"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.giantbomb.com/profile/bruce/blog/album-review-arcade-fires-the-suburbs/57556/?comment_page=1</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toadthewetsprocket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toadthewetsprocket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://toadthewetsprocket.com/the-band/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toloselatrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toloselatrack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#toloselatrack"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://f4.bcbits.com/img/0008745489_10.jpg"/>
+        <rdfs:comment rdf:resource="https://www.toloselatrack.org/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#touchandgo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#touchandgo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#touchandgo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="http://www.tgrec.com/images/logo.gif"/>
+        <rdfs:comment rdf:resource="http://www.tgrec.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#traditoriditutti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#traditoriditutti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#instrumental"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#calibro35"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#recordkicks"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#justkids"/>
+        <schema:image>https://img.discogs.com/MYNn3eabd5JxM8a5PwfogN9e4eg=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4924083-1386237984-9068.jpeg.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#traditoriditutti"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#justkids"/>
+        <rdfs:comment>http://www.justkidsmagazine.it/2013/10/25/calibro-35-traditori-di-tutti/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#triste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#triste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#triste"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://assets.bigcartel.com/theme_images/4062901/logoquadrato.jpg"/>
+        <rdfs:comment rdf:resource="https://triste.bigcartel.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#twentymilestomother -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#twentymilestomother">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#hardcorepunk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#TWENTYMILESTOMOTHER"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#DIY"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2009"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rockit"/>
+        <schema:image>https://dev.rockit.it/thumb300x300/copertine/11482.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#twentymilestomother"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#rockit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dev.rockit.it/recensione/11482/twentymilestomother-demo</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#umbria24noise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#umbria24noise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#urtovox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#urtovox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <rdfs:comment>http://www.urtovox.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#urtovox"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="http://www.urtovox.com/img_2011/logo.jpg"/>
+        <rdfs:comment rdf:resource="http://www.urtovox.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#verdena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#verdena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Albino"/>
+        <rdfs:comment>https://www.verdena.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#vicerecords -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#vicerecords">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#vicerecords"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://pbs.twimg.com/profile_images/657586425186144256/N1YySxuI_400x400.jpg"/>
+        <rdfs:comment rdf:resource="https://www.vice.com/en_uk/topic/music"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#viceversa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#viceversa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#viceversa"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://rockitecn.nohup.it/thumb170x100/foto/79771.jpg"/>
+        <rdfs:comment rdf:resource="https://www.rockit.it/viceversarecords"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#whatburnsneverreturns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#whatburnsneverreturns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mathrock"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#doncaballero"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#touchandgo"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1998"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#that&apos;snotcurrent"/>
+        <schema:image>https://images-na.ssl-images-amazon.com/images/I/41dyjayK%2BkL.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#whatburnsneverreturns"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#that&apos;snotcurrent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.thatsnotcurrent.com/burns-never-returns/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#whiskeyfortheholyghost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#whiskeyfortheholyghost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#alternative"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#subpop"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1994"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#spectrumculture"/>
+        <schema:image>https://img.discogs.com/Fw9Dlh-NsdzYLmco_E4A6aopiq8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7795995-1448947377-7595.jpeg.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#whiskeyfortheholyghost"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#spectrumculture"/>
+        <rdfs:comment>https://spectrumculture.com/2011/05/23/revisit-mark-lanegan-whiskey-for-the-holy-ghost/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#worship -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#worship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#shoegaze"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#aplacetoburystrangers"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#deadocean"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2012"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thequietus"/>
+        <schema:image>https://images-na.ssl-images-amazon.com/images/I/61C-aCrU6TL._SX466_.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#worship"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#thequietus"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://thequietus.com/articles/09138-a-place-to-bury-strangers-worship-review</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1905 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1905">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1969 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1969">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1992 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1992">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1994 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1994">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1998 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1998">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#4AD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#4AD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#4AD"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#independent"/>
+        <schema:image rdf:resource="https://i.pinimg.com/originals/44/e6/93/44e6936223ea2b3bf61ffcc4219cee22.jpg"/>
+        <rdfs:comment rdf:resource="https://4ad.com/"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#OFF! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#OFF!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment>http://offofficial.com/bio/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cap&apos;njazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cap&apos;njazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+        <comingfrom rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#USA"/>
+        <rdfs:comment>https://www.capnjazz.com/</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan&amp;dukegarwood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#marklanegan&amp;dukegarwood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#featuring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#off! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#off!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#punk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#OFF!"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#vicerecords"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2012"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pitchfork"/>
+        <schema:image>https://i.ebayimg.com/images/g/KCEAAOxy06hSHlkf/s-l300.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#off!"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pitchfork"/>
+        <rdfs:comment>https://pitchfork.com/reviews/albums/16603-off/</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#perchèquestacasaciesplodenegliocchi? -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#perchèquestacasaciesplodenegliocchi?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#hardcorepunk"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#actiondeadmouse"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#triste"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2013"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bandcamp"/>
+        <schema:image>https://scagliedirumore.files.wordpress.com/2015/10/12042762_548938928589622_7623032360787673776_n.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#perchèquestacasaciesplodenegliocchi?"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#bandcamp"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://actiondeadmouse.bandcamp.com/album/perch-questa-casa-ci-esplode-negli-occhi</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pianosonatas8,14,23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pianosonatas8,14,23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#classic"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#beethoven"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#emiclassics"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#1998"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#gramophone"/>
+        <performer:s_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">danielbarenboim</performer:s_name>
+        <schema:image>http://mp3-red.ru/cover/1274975-460x460/beethoven-piano-sonatas.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#pianosonatas8,14,23"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#gramophone"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gramophone.co.uk/review/beethoven-piano-sonatas-39</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#that&apos;snotcurrent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#that&apos;snotcurrent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#tuprenditil&apos;amorechevuoi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#tuprenditil&apos;amorechevuoi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+        <belongsto rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#songwriting"/>
+        <createdby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cesarebasile"/>
+        <publishedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#urtovox"/>
+        <publishedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#2014"/>
+        <recordedin rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#studio"/>
+        <reviewedby rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina"/>
+        <schema:image>https://rockitecn.nohup.it/thumb300x300/copertine/28240.jpg</schema:image>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#tuprenditil&apos;amorechevuoi"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#reviewedby"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mescalina"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.mescalina.it/musica/recensioni/cesare-basile-tu-prenditi-lamore-che-vuoi-e-non-chiederlo-piu</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Album"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Label"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Magazine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#Publicationdate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#band"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#featuring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#soloist"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#cd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#lp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mariajose/ontologies/2018/10/untitled-ontology-8#mc"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
